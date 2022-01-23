@@ -1,0 +1,181 @@
+ 
+ 
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local label = Instance.new("TextLabel")
+local printhi = Instance.new("TextButton")
+local jailbreakautorob = Instance.new("TextButton")
+local Vynixiusgui = Instance.new("TextButton")
+local Arsenal = Instance.new("TextButton")
+local DarkHub = Instance.new("TextButton")
+ 
+--Properties:
+ 
+ScreenGui.Parent = game.CoreGui
+ 
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+MainFrame.Position = UDim2.new(0.310245544, 0, 0.314110428, 0)
+MainFrame.Size = UDim2.new(0, 485, 0, 274)
+MainFrame.Style = Enum.FrameStyle.DropShadow
+ 
+label.Name = "label"
+label.Parent = MainFrame
+label.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+label.Position = UDim2.new(-0.00618556701, 0, 0.87451601, 0)
+label.Size = UDim2.new(0, 474, 0, 40)
+label.Font = Enum.Font.Oswald
+label.Text = "Scripts 〣 Made by 9vcz"
+label.TextColor3 = Color3.fromRGB(0, 0, 0)
+label.TextSize = 42.000
+ 
+printhi.Name = "printhi"
+printhi.Parent = MainFrame
+printhi.BackgroundColor3 = Color3.fromRGB(197, 197, 197)
+printhi.BorderColor3 = Color3.fromRGB(190, 190, 190)
+printhi.Position = UDim2.new(0.0151568549, 0, 0.683288574, 0)
+printhi.Size = UDim2.new(0, 187, 0, 41)
+printhi.Visible = false
+printhi.Style = Enum.ButtonStyle.RobloxButton
+printhi.Font = Enum.Font.PatrickHand
+printhi.Text = "Print \"Hi\" (troll)"
+printhi.TextColor3 = Color3.fromRGB(255, 255, 255)
+printhi.TextSize = 39.000
+ 
+jailbreakautorob.Name = "jailbreakautorob"
+jailbreakautorob.Parent = MainFrame
+jailbreakautorob.BackgroundColor3 = Color3.fromRGB(197, 197, 197)
+jailbreakautorob.BorderColor3 = Color3.fromRGB(190, 190, 190)
+jailbreakautorob.Position = UDim2.new(0.3930206, 0, 0.672121763, 0)
+jailbreakautorob.Size = UDim2.new(0, 190, 0, 39)
+jailbreakautorob.Style = Enum.ButtonStyle.RobloxButton
+jailbreakautorob.Font = Enum.Font.PatrickHand
+jailbreakautorob.Text = "AutoRob"
+jailbreakautorob.TextColor3 = Color3.fromRGB(255, 255, 255)
+jailbreakautorob.TextSize = 39.000
+jailbreakautorob.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1"))();
+end)
+ 
+Vynixiusgui.Name = "Vynixiusgui"
+Vynixiusgui.Parent = MainFrame
+Vynixiusgui.BackgroundColor3 = Color3.fromRGB(197, 197, 197)
+Vynixiusgui.BorderColor3 = Color3.fromRGB(190, 190, 190)
+Vynixiusgui.Position = UDim2.new(-0.00717506371, 0, 0.675044179, 0)
+Vynixiusgui.Size = UDim2.new(0, 178, 0, 40)
+Vynixiusgui.Style = Enum.ButtonStyle.RobloxButton
+Vynixiusgui.Font = Enum.Font.PatrickHand
+Vynixiusgui.Text = "Vynixius Gui"
+Vynixiusgui.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vynixiusgui.TextSize = 39.000
+Vynixiusgui.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Script.lua"))()
+end)
+ 
+Arsenal.Name = "Arsenal"
+Arsenal.Parent = MainFrame
+Arsenal.BackgroundColor3 = Color3.fromRGB(197, 197, 197)
+Arsenal.BorderColor3 = Color3.fromRGB(190, 190, 190)
+Arsenal.Position = UDim2.new(-0.000327324495, 0, 0.52027303, 0)
+Arsenal.Size = UDim2.new(0, 175, 0, 37)
+Arsenal.Style = Enum.ButtonStyle.RobloxButton
+Arsenal.Font = Enum.Font.PatrickHand
+Arsenal.Text = "Arsenal"
+Arsenal.TextColor3 = Color3.fromRGB(255, 255, 255)
+Arsenal.TextSize = 39.000
+Vynixiusgui.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/V3.lua"))()
+end)
+ 
+DarkHub.Name = "DarkHub"
+DarkHub.Parent = MainFrame
+DarkHub.BackgroundColor3 = Color3.fromRGB(197, 197, 197)
+DarkHub.BorderColor3 = Color3.fromRGB(190, 190, 190)
+DarkHub.Position = UDim2.new(0.401436895, 0, 0.516410232, 0)
+DarkHub.Size = UDim2.new(0, 182, 0, 38)
+DarkHub.Style = Enum.ButtonStyle.RobloxButton
+DarkHub.Font = Enum.Font.PatrickHand
+DarkHub.Text = "DarkHub"
+DarkHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+DarkHub.TextSize = 39.000
+Vynixiusgui.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))
+end)
+ 
+-- Scripts:
+ 
+local function GVTSV_fake_script() -- MainFrame.LocalScript 
+	local script = Instance.new('LocalScript', MainFrame)
+ 
+ 
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+ 
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+ 
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+ 
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+ 
+end
+coroutine.wrap(GVTSV_fake_script)()
+local function XNKDHSP_fake_script() -- ScreenGui.Keybind 
+	local script = Instance.new('LocalScript', ScreenGui)
+ 
+	local MainFrame = script.Parent.MainFrame
+	local Opened = false	
+ 
+	local PositionClosed = UDim2.new(-0.374, 0,0.303, 0)
+	local PositionOpened = UDim2.new(0.31, 0,0.314, 0)
+ 
+	local UserInputService = game:GetService("UserInputService")
+ 
+	UserInputService.InputBegan:Connect(function(KeyCode)
+		if KeyCode.KeyCode == Enum.KeyCode.RightAlt then
+			if Opened then 
+				MainFrame:TweenPosition((PositionClosed), "InOut", "Quint")
+				Opened = false
+			else
+				MainFrame:TweenPosition((PositionOpened), "InOut", "Quart")
+			    Opened = true
+			end
+		end
+	end)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+end
+coroutine.wrap(XNKDHSP_fake_script)()
+ 
+ 
